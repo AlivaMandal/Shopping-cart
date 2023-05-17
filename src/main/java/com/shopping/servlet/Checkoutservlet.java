@@ -20,7 +20,7 @@ public class Checkoutservlet extends HttpServlet {
 		
 		try(PrintWriter out = response.getWriter()){
 			
-			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
             Date date = new Date();
 			ArrayList<Cart> cart_list = (ArrayList<Cart>) request.getSession().getAttribute("cart-list");
 			User auth = (User) request.getSession().getAttribute("auth");
